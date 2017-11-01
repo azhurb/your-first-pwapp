@@ -203,8 +203,7 @@
 
   // Save list of cities to localStorage.
   app.saveSelectedCities = function() {
-    var selectedCities = JSON.stringify(app.selectedCities);
-    localStorage.selectedCities = selectedCities;
+    localStorage.selectedCities = JSON.stringify(app.selectedCities);
   };
 
   app.getIconClass = function(weatherCode) {
